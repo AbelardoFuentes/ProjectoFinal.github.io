@@ -8,6 +8,7 @@
 
 body{
     background-color: #94d9ea;
+    display: flex;
 }
     
 .menu-contenido{
@@ -22,16 +23,18 @@ body{
     grid-column: span 2;
     height: 100%;
     background-color: #00324a;
+
 }
 
 .seccion-der{
     grid-column: span 5;
     background-color: #f7f7f7;
     height: 100%;
+    
 }
 
 .cont-izq{
-    padding: 1rem 3rem;
+    padding: 2rem 3rem;
 }
 
 .perfil{
@@ -42,8 +45,7 @@ body{
 .perfil img{
     width: 100%;
     border-radius: 50%;
-    border: 8px solid #002333;
-    
+    border: 8px solid #002333;    
 }
 
 .nombre{
@@ -73,17 +75,147 @@ body{
 }
 
 .info-cont ul{
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
-
 .info-cont ul li{
     padding: .4rem 0;
     display: flex;
     align-items: center;
+    color: #718096
 }
-
 .info-cont ul li i{
     padding-right: 1rem;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: aqua;
+}
+
+.habilidades ul{
+    padding-top: 2rem;
+}
+.habilidades ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: .4rem 0;
+
+}
+
+.barr-prog{
+    width: 100%;
+    height: .4rem;
+    background-color: #2d3748;
+    position: relative;
+    border-radius: 12px;
+    
+}
+.progreso{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background-color: #2d9cdb;
+    border-radius: 12px;
+}
+.progreso-js{
+    width: 70%;
+}
+.progreso-ps{
+    width: 90%;
+}
+
+.tit-hab{
+    text-transform: uppercase;
+    color: #f7f7f7;
+    font-size: 1rem;
+    padding-right: 1rem;   
+}
+
+.subtitulo{
+    padding-top: 2rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #f7f7f7;
+}
+
+.gp{
+    color: #ccc;
+    padding: .4rem 0;
+}
+
+.sec-ref li{
+    color: #ccc;
+    padding: .2rem 0;
+}
+
+.sec-ref li i{
+    padding-right: .5rem;
+    font-size: 1.2rem;
+    color: aqua;
+}
+
+.cont-der{
+    padding: 2rem 3rem;
+}
+
+.tit-der{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #2f80ed;
+    margin-bottom: 1.2rem;
+    position: relative;
+}
+.tit-der::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: .2rem;
+    background-color: #2d9cdb;
+    border-radius: 12px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);    
+}
+
+.para{
+    line-height: 1.5rem;
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+.sec{
+    padding-bottom: 2rem;
+}
+
+.linea{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.lin-tit{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #002333;
+    text-transform: uppercase;
+
+}
+
+.lin-tit2{
+    letter-spacing: 1px;
+    font-size: 1.3rem;
+    color: #2d9cdb;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.lin-cont{
+    border-left: 1px solid #ccc;
+    padding-left: 2rem;
+}
+
+.lin-tit2::before{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #2d9cdb;
+    border-radius: 50%;
+
 }
