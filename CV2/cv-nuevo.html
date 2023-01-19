@@ -18,7 +18,9 @@
             <div class="cont-izq">
                 <div class="perfil">
                     <div class="img">
-                        <img src="foto-chica.jpg" alt="Imagen de perfil">
+                        <button id="boton" onclick="ocultar();" style="margin-bottom: 1rem;">Ocultar Imagen</button>
+                        <img id="img" src="foto-chica.jpg" alt="Imagen de perfil">
+                        <button id="boton" onclick="mostrar();" style="margin-top: 1rem;">Mostrar Imagen</button>
                     </div>
                     <h2 class="nombre">DANIELA FUENTES</h2>
                     <p class="carrera">Administración de Empresas</p>
@@ -271,6 +273,14 @@
             </div>
         </section>
     </main>
-    
+    <script>
+        function mostrar(){
+            document.getElementById("img").style.display="block";
+        }
+
+        function ocultar(){
+            document.getElementById("img").style.display="none";
+        }
+    </script>
 </body>
 </html>
