@@ -10,7 +10,6 @@ body{
     background-color: #FFCCBC;    
 }
     
-
 .menu-contenido{
     min-height: 100vh;
     width: 80%;
@@ -46,7 +45,7 @@ body{
 }
 #boton{
     color: black;
-    background-color: blueviolet;
+    background-color: #FFAB91;
     font-weight: 900;
     padding: 2px 10px 2px 10px;
     border-radius: 15px;
@@ -213,12 +212,59 @@ body{
     transform: translateY(-50%);    
 }
 
+.parrafo{
+    font-size: 1.2rem;
+    text-align: justify;
+}
+.parrafo1{
+    font-size: 1.2rem;
+    text-align: justify;
+    display: none;
+}
+
+.ocultar1{
+    display: none;
+}
+.mostrar1{
+    display: block;
+}
+
+
+#botono{
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-weight: bolder;
+    margin-left: 8rem;
+}
+
+#boton1{
+    font-size: .8rem;
+    font-family: cursive;
+    color: black;
+    background-color: #C39BD3;
+    font-weight: 900;
+    padding: 2px 10px 2px 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+
+}
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display: block;
+}
+
 .para{
     line-height: 1.5rem;
     color: black;
     font-size: 1.1rem;
     text-align: justify;
 }
+
 
 .sec{
     padding-bottom: 2rem;

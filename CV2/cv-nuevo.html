@@ -11,6 +11,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Fredoka+One&family=Poppins:ital,wght@0,100;0,300;0,400;1,600&family=Sarabun:wght@200&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/0d19452303.js" crossorigin="anonymous"></script>
+    
+    <script src="CV2/cv-nuevo.js"></script>
+   
 </head>
 <body>
     <main class="menu-contenido">
@@ -150,20 +153,35 @@
             <div class="cont-der">
                 <section class="sobre sec">
                     <h2 class="tit-der">Sobre mi</h2>
-                    <p class="para">
-                    En una época de grandes cambios administrativos dentro de la
-                    organización de la empresa, decidí cambiar el rumbo profesional
-                    que había seguido durante los últimos 11 años de vida laboral; 
-                    tome la determinación de cambiar esa dirección y seguir un instinto
-                    que había surgido de forma totalmente casual. <br>
-                    <br>
-                    Amplia experiencia como auxiliar administrativo, especialmente en el 
-                    sector financiero para la tramitación de facturas, elaboración de
-                    informes, gestión de acreedores y deudores, y administración de
-                    salarios. Soy hábil para números, trabajo con precisión y soy buena para
-                    mantener la comunicación tanto interna como externa. <br>
-                    <br>
-                    </p>
+                    <div class="leer-mas">
+                        <p class="parrafo">
+                        En una época de grandes cambios administrativos dentro de la
+                        organización de la empresa, decidí cambiar el rumbo profesional
+                        que había seguido durante los últimos 11 años de vida laboral; 
+                        tome la determinación de cambiar esa dirección y seguir un instinto
+                        que había surgido de forma totalmente casual. <br>
+                        <br>
+                        Amplia experiencia como auxiliar administrativo, especialmente en el 
+                        sector financiero para la tramitación de facturas, elaboración de
+                        informes, gestión de acreedores y deudores, y administración de
+                        salarios. Soy hábil para números, trabajo con precisión y soy buena para
+                        mantener la comunicación tanto interna como externa. <br>
+                        </p>
+                        
+                            <button id="boton1" onclick="mostrar1();">Leer más...</button>
+                            <p class="parrafo1" id="parr">También soy asistente virtual, orientada al cliente y con más
+                            de 5 años de experiencia en tareas administrativas. Soy detallista,
+                            organizada y orientada a la calidad. Con capacidad para gestionar 
+                            proyectos online cumpliendo los requerimentos del cliente y con la
+                            confidencialidad requerida. Éstos son algunos de los servicios
+                            administrativos que puedo ofrecer: contabilidad, atención al cliente,
+                            gestión de bases de datos, creación de reportes, presentaciones 
+                            Power Point, organización de agenda, etc.
+                            <button id="botono" onclick="ocultar1();">Ocultar</button>    
+                            </p>
+                        
+                    </div>
+                    
                 </section>
                 
                 <section class="experiencia-sec">
@@ -238,7 +256,7 @@
                     <div class="linea">
                         <div class="der-lin-cont">
                             <h5 class="lin-tit">Colegio Administrativo de Madrid.</h5>
-                            <p class="para">oct. 2012 - dic.2012</p>
+                            <p class="para">mar. 2012 - jul.2012</p>
                         </div>
                         <div class="izq-lin-cont">
                             <div class="lin-cont">
@@ -249,7 +267,7 @@
                     <div class="linea">
                         <div class="der-lin-cont">
                             <h5 class="lin-tit">Universidad de Buenos Aires.</h5>
-                            <p class="para">mar. 2012 - jul. 2012</p>
+                            <p class="para">oct. 2012 - dic.2012</p>
                         </div>
                         <div class="izq-lin-cont">
                             <div class="lin-cont">
@@ -261,6 +279,7 @@
                         <div class="der-lin-cont">
                             <h5 class="lin-tit">Universidad Nacional de la Plata.</h5>
                             <p class="para">may. 2013 - ene. 2014</p>
+                            <br>
                         </div>
                         <div class="izq-lin-cont">
                             <div class="lin-cont">
@@ -268,11 +287,22 @@
                             </div>
                         </div>   
                     </div>
-
+                    <div class="linea">
+                        <div class="der-lin-cont">
+                            <h5 class="lin-tit">Escuela Argentina de <br> Negocios Instituto Universitario.</h5>
+                            <p class="para">abr. 2014 - dic.2014</p>
+                        </div>
+                        <div class="izq-lin-cont">
+                            <div class="lin-cont">
+                                <h5 class="lin-tit2">Gestión Estratégica de Ventas.</h5>
+                             </div>
+                        </div>
+                    </div>
                 </section>
             </div>
         </section>
     </main>
+
     <script>
         function mostrar(){
             document.getElementById("img").style.display="block";
@@ -280,6 +310,15 @@
 
         function ocultar(){
             document.getElementById("img").style.display="none";
+        }
+
+        function mostrar1(){
+            document.getElementById("parr").style.display="block"; 
+        }
+
+        function ocultar1(){
+            document.getElementById("parr").style.display="none";
+
         }
     </script>
 </body>
