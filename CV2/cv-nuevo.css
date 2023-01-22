@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    list-style: none;
     font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -332,6 +331,64 @@ body{
     top: 50%;
     transform: translateY(-50%); 
     margin-top: 1.5rem;  
+}
+
+footer{
+    background-color: #AD1457;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 8.3rem;
+    margin-right: 8.3rem;
+    margin-bottom: 2rem; 
+    
+}
+
+.img-pie{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 2rem;
+    height: 2rem;
+    
+}
+
+nav{
+    float: right;
+}
+
+nav ul li{
+    list-style: none;
+    margin-top: .1rem;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    float: left;
+    padding: .5rem;
+    position: relative;   
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a::before{
+    display: block;
+    content: " ";
+    width: 0;
+    background: coral;
+    height: 5px;
+    top: 0;
+    position: absolute;
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+.fa-brands{
+    font-size: 1.5rem;
+    color: coral;
+    
 }
 
 @media screen and (max-width: 823px) {
