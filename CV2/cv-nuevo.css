@@ -376,7 +376,7 @@ nav ul li a::before{
     width: 0;
     background: coral;
     height: 5px;
-    top: 0;
+    bottom: 0;
     position: absolute;
     transition: width 0.5s;
 }
