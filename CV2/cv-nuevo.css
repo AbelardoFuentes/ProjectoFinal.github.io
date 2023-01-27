@@ -345,8 +345,9 @@ footer{
 .img-pie{
     margin-top: 5px;
     margin-left: 5px;
-    width: 2rem;
-    height: 2rem;
+    width: 6rem;
+    height: 5rem;
+    
     
 }
 
@@ -386,9 +387,9 @@ nav ul li a:hover::before{
 }
 
 .fa-brands{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: coral;
-    
+    padding-top: 1rem;
 }
 
 @media screen and (max-width: 823px) {
