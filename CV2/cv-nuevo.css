@@ -6,10 +6,12 @@
 }
 
 body{
-    background-color: #FFCCBC;    
+    background-image: url("fondo-pastel.jpg");
+    background-size: cover;
 }
     
 .menu-contenido{
+    border: 5px solid black;
     min-height: 100vh;
     width: 80%;
     margin: 2rem auto;
@@ -235,7 +237,7 @@ body{
     cursor: pointer;
     text-decoration: underline;
     font-weight: bolder;
-    margin-left: 8rem;
+    margin-left: 40rem;
 }
 
 #boton1{
@@ -334,21 +336,20 @@ body{
 }
 
 footer{
-    background-color: #AD1457;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-left: 8.3rem;
     margin-right: 8.3rem;
     margin-bottom: 2rem; 
-    
+    padding-left: 12.5rem;
+    padding-right: 12.5rem;
 }
 
-.img-pie{
+.img-pie{ 
+    border: 5px solid #a31e7e;
     margin-top: 5px;
     margin-left: 5px;
     width: 6rem;
-    height: 5rem;
-    
-    
+    height: 5rem;  
 }
 
 nav{
@@ -375,7 +376,7 @@ nav ul li a::before{
     display: block;
     content: " ";
     width: 0;
-    background: coral;
+    background: #a31e7e;
     height: 5px;
     bottom: 0;
     position: absolute;
@@ -387,8 +388,8 @@ nav ul li a:hover::before{
 }
 
 .fa-brands{
-    font-size: 2.5rem;
-    color: coral;
+    font-size: 2rem;
+    color: #a31e7e;
     padding-top: 1rem;
 }
 
